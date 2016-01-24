@@ -1,0 +1,15 @@
+>>> Warning 216 "tm3.c" Line 492(1,2): Interrupts disabled during call to prevent re-entrancy:  (GetStatusLCD)
+>>> Warning 216 "tm3.c" Line 492(1,2): Interrupts disabled during call to prevent re-entrancy:  (SetCommandLCD)
+>>> Warning 216 "tm3.c" Line 492(1,2): Interrupts disabled during call to prevent re-entrancy:  (SetDataLCD)
+>>> Warning 216 "tm3.c" Line 492(1,2): Interrupts disabled during call to prevent re-entrancy:  (SetAddrLCD)
+>>> Warning 216 "tm3.c" Line 492(1,2): Interrupts disabled during call to prevent re-entrancy:  (SetAoutRange0)
+>>> Warning 216 "tm3.c" Line 492(1,2): Interrupts disabled during call to prevent re-entrancy:  (SetAoutRange1)
+>>> Warning 216 "tm3.c" Line 492(1,2): Interrupts disabled during call to prevent re-entrancy:  (SetOutDac0)
+>>> Warning 216 "tm3.c" Line 492(1,2): Interrupts disabled during call to prevent re-entrancy:  (SetOutDac1)
+>>> Warning 216 "tm3.c" Line 492(1,2): Interrupts disabled during call to prevent re-entrancy:  (ClrTxt)
+>>> Warning 216 "tm3.c" Line 492(1,2): Interrupts disabled during call to prevent re-entrancy:  (PrintXY)
+>>> Warning 202 "C:\Projects\MWT-3\TM3Firmware\font_6x8r.h" Line 13(157,171): Variable never used:   fontheight_6x8
+>>> Warning 202 "C:\Projects\MWT-3\TM3Firmware\font_6x8r.h" Line 14(181,194): Variable never used:   fontwidth_6x8
+>>> Warning 202 "tm3.c" Line 400(5,11): Variable never used:   symbol
+      Memory usage:   ROM=45%      RAM=56% - 57%
+      0 Errors,  13 Warnings.

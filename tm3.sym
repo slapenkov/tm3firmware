@@ -1,0 +1,252 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019     @INTERRUPT_AREA
+01A-01B strtok.save
+01C-01F _Randseed
+020     fontheight_6x8
+021     fontwidth_6x8
+022-121 string
+122     k
+123     l
+124-125 Speed
+126-127 Addr
+128-129 ValPot0
+12A-12B ValPot1
+12C-12D ValOut0
+12E-12F ValOut1
+130-131 ScanCode
+132-133 Relay
+134-135 keyPort
+136-137 keyPrev
+138     debTimer
+139-13C keyRows
+13D-33C MB_Buffer
+33D-33E MB_Length
+33F-340 ValidReq
+341-342 CRCReq
+343-344 ExcReq
+345-346 CRCr
+347-348 CRCc
+349     i
+34A     j
+34B-34C @sprintf_string
+34D     MAIN.symbol
+34E-34F MAIN.sym_count
+350-351 ClrGrph.i
+350     KeyScan.i
+350-351 CharTableLoad.i
+350-351 @PRINTF_LU_535.P1
+350     @PRINTF_X_535.P2
+350     BURead.@SCRATCH1
+350     @PSTRINGC_535.@SCRATCH1
+351     @PRINTF_X_535.P1
+351     BURead.@SCRATCH2
+351     KeyScan.@SCRATCH1
+351     @PSTRINGC_535.@SCRATCH2
+352-353 SetData2LCD.data
+352     CharTableLoad.@SCRATCH1
+352     BURead.@SCRATCH3
+352     KeyScan.@SCRATCH2
+352     @PRINTF_LU_535.@SCRATCH1
+353     BURead.@SCRATCH4
+353     KeyScan.@SCRATCH3
+353     @PRINTF_LU_535.@SCRATCH2
+354     SetData2LCD.@SCRATCH1
+354     @PRINTF_LU_535.@SCRATCH3
+355     @PRINTF_LU_535.@SCRATCH4
+356     @PRINTF_LU_535.@SCRATCH5
+357     @PRINTF_LU_535.@SCRATCH6
+358     @PRINTF_LU_535.@SCRATCH7
+359     @SPRINTF.P1
+35D     Reaction.StAddr
+35D-360 @DIV3232.P1
+35D     Incoming.@SCRATCH1
+35E     Reaction.EnAddr
+35E     Incoming.@SCRATCH2
+35F     PrintXY.x
+35F     AddRegData.reg
+35F-360 ClrTxt.i
+35F     SetRegData.reg
+35F     @delay_ms1.P1
+35F     BUWrite.@SCRATCH1
+35F     Reaction.@SCRATCH1
+360-361 SetRelay.rel
+360-361 SetAoutRange1.value
+360     PrintXY.y
+360-361 SetOutDac0.value
+360     @PUTCHAR_BIU_1.P1
+360-361 SetAoutRange0.value
+360-361 SetOutDac1.value
+360     AddRegData.@SCRATCH1
+360     SetRegData.@SCRATCH1
+360     Reaction.@SCRATCH2
+361-364 @DIV3232.P1
+361-362 PrintXY.s
+361-362 ModbusCRC.buf
+361     AddRegData.@SCRATCH2
+361     SetRegData.@SCRATCH2
+361     Reaction.@SCRATCH3
+362     SetAoutRange0.@SCRATCH1
+362     SetAoutRange1.@SCRATCH1
+362     SetOutDac0.@SCRATCH1
+362     SetOutDac1.@SCRATCH1
+362     Reaction.@SCRATCH4
+363     SetCommandLCD.cmd
+363     ModbusCRC.len
+363     PrintXY.@SCRATCH1
+364     SetDataLCD.data
+364     ModbusCRC.i
+364     SetCommandLCD.@SCRATCH1
+364     PrintXY.@SCRATCH2
+365-366 SetAddrLCD.address
+365     ModbusCRC.index
+365     SetDataLCD.@SCRATCH1
+365     PrintXY.@SCRATCH3
+365     @DIV3232.@SCRATCH1
+366     ModbusCRC.CRC_Low
+366     PrintXY.@SCRATCH4
+366     @DIV3232.@SCRATCH2
+367     ModbusCRC.CRC_High
+367-368 @MUL1616.P1
+367     GetStatusLCD.i
+367     SetAddrLCD.@SCRATCH1
+367     @DIV3232.@SCRATCH3
+368     @DIV3232.@SCRATCH4
+369-36A @MUL1616.P1
+369     @DIV3232.@SCRATCH5
+36B     @MUL1616.@SCRATCH1
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF2.2   TMR0IF
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+21EE  @delay_ms1
+2144  @MUL1616
+00BA  fontdata_6x8
+1E46  GetStatusLCD
+1E7A  SetCommandLCD
+1EA4  SetDataLCD
+2BB2  SetData2LCD
+203C  SetAddrLCD
+2C58  CharTableLoad
+2166  PrintXY
+2106  ClrTxt
+2CEA  ClrGrph
+1876  SetRelay
+2A28  InitMcu
+2AC0  BURead
+1ED2  BUWrite
+1952  SetAoutRange0
+198E  SetAoutRange1
+18C6  SetOutDac0
+190C  SetOutDac1
+2EA6  KeyScan
+08C8  modbus_auchCRCHi
+09D8  modbus_auchCRCLo
+2220  @PUTCHAR_BIU_1
+2BA6  RsInit
+0B7E  Incoming
+0AE8  @DIV3232
+0BE0  ModbusCRC
+0C38  AddRegData
+19CA  SetRegData
+2242  Reaction
+2F72  MAIN
+29C8  @const533
+2D62  @SPRINTF
+2D82  @PSTRINGC_535
+29DC  @const538
+2DA2  @PRINTF_X_535
+29E6  @const544
+2DE8  @PRINTF_LU_535
+29EC  @const548
+29F8  @const549
+2A04  @const550
+2A1A  @const551
+2F72  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+14DA  exit
+
+
+User Memory space: 
+
+User Memory space: 
+
+Project Directory:
+    C:\Projects\MWT-3\TM3Firmware\
+
+Project Files:
+    tm3.c
+    tm3.h
+    ..\..\..\Program Files (x86)\PICC\devices\18F4520.h
+    ..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
+    ..\..\..\Program Files (x86)\PICC\drivers\stddef.h
+    ..\..\..\Program Files (x86)\PICC\drivers\string.h
+    ..\..\..\Program Files (x86)\PICC\drivers\ctype.h
+    ee_var.h
+    font_6x8r.h
+    graph_lcd.h
+    modbus_isr.h
+
+Units:
+    C:\Projects\MWT-3\TM3Firmware\tm3 (main)
+
+Compiler Settings:
+    Processor:      PIC18F4520
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    ICD Provisions: Yes
+
+Output Files:
+    Errors:      tm3.err
+    Ext Symbols: tm3.esym
+    INHX32:      tm3.hex
+    Symbols:     tm3.sym
+    List:        tm3.lst
+    Debug/COFF:  tm3.cof
+    Project:     tm3.PJT
+    Call Tree:   tm3.tre
+    Statistics:  tm3.sta
