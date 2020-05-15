@@ -1,6 +1,6 @@
 
-ROM used: 14382 (45%)
-          14382 (45%) including unused fragments
+ROM used: 14384 (45%)
+          14384 (45%) including unused fragments
 
           2 Average locations per line
           7 Average locations per statement
@@ -14,11 +14,11 @@ Lines Stmts  %   Files
 ----- ----- ---  -----
   491   297  15  tm3.c
    62     0   0  tm3.h
-  466     0   0  ..\..\..\Program Files (x86)\PICC\devices\18F4520.h
- 1273   359  18  ..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
-   32     0   0  ..\..\..\Program Files (x86)\PICC\drivers\stddef.h
-  409   121   6  ..\..\..\Program Files (x86)\PICC\drivers\string.h
-   28     0   0  ..\..\..\Program Files (x86)\PICC\drivers\ctype.h
+  466     0   0  C:\Program Files\PICC\devices\18F4520.h
+ 1273   359  18  C:\Program Files\PICC\drivers\stdlib.h
+   32     0   0  C:\Program Files\PICC\drivers\stddef.h
+  409   121   6  C:\Program Files\PICC\drivers\string.h
+   28     0   0  C:\Program Files\PICC\drivers\ctype.h
    17     0   0  ee_var.h
  2582     0   0  font_6x8r.h
   486   271  13  graph_lcd.h
@@ -63,7 +63,7 @@ Page ROM  %  RAM   Vol Diff  Functions:
 0     20   0   0             @const533
 0     32   0   1             @SPRINTF
 0     32   0   2             @PSTRINGC_535
-0     10   0   0             @const538
+0     12   0   0             @const538
 0     70   0   2             @PRINTF_X_535
 0      6   0   0             @const544
 0    190   1   9             @PRINTF_LU_535
@@ -89,7 +89,7 @@ Program metrics:
 00000-00002     4  0  
 00004-00006     0  4  
 00008-000B8   178  0  
-000BA-07CBE  14200  17550  
+000BA-07CBE  14202  17548  
 
 
 

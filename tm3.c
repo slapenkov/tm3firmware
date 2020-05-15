@@ -430,7 +430,7 @@ void	main() {
 	//greetings
 	sprintf(string,"LCD Terminal Module");
 	PrintXY(0,0,string);
-	sprintf(string,"TM-3 v1.2");
+	sprintf(string,"TM-3 v1.5.8");
 	PrintXY(0,1,string);
 	sprintf(string,"ID:");	
 	PrintXY(0,3,string);
@@ -446,7 +446,7 @@ void	main() {
 	PrintXY(5,7,string);
 	sprintf(string,"Пожалуйста,ожидайте.");
 	PrintXY(0,9,string);
-	sprintf(string,"2013 OOO MBT");
+	sprintf(string,"2020 OOO MBT");
 	PrintXY(4,15,string);
 	
 	/*for(k=0; k<20; k++){

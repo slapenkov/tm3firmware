@@ -165,44 +165,44 @@ ROM Allocation:
 1E46  GetStatusLCD
 1E7A  SetCommandLCD
 1EA4  SetDataLCD
-2BB2  SetData2LCD
+2BB4  SetData2LCD
 203C  SetAddrLCD
-2C58  CharTableLoad
+2C5A  CharTableLoad
 2166  PrintXY
 2106  ClrTxt
-2CEA  ClrGrph
+2CEC  ClrGrph
 1876  SetRelay
-2A28  InitMcu
-2AC0  BURead
+2A2A  InitMcu
+2AC2  BURead
 1ED2  BUWrite
 1952  SetAoutRange0
 198E  SetAoutRange1
 18C6  SetOutDac0
 190C  SetOutDac1
-2EA6  KeyScan
+2EA8  KeyScan
 08C8  modbus_auchCRCHi
 09D8  modbus_auchCRCLo
 2220  @PUTCHAR_BIU_1
-2BA6  RsInit
+2BA8  RsInit
 0B7E  Incoming
 0AE8  @DIV3232
 0BE0  ModbusCRC
 0C38  AddRegData
 19CA  SetRegData
 2242  Reaction
-2F72  MAIN
+2F74  MAIN
 29C8  @const533
-2D62  @SPRINTF
-2D82  @PSTRINGC_535
+2D64  @SPRINTF
+2D84  @PSTRINGC_535
 29DC  @const538
-2DA2  @PRINTF_X_535
-29E6  @const544
-2DE8  @PRINTF_LU_535
-29EC  @const548
-29F8  @const549
-2A04  @const550
-2A1A  @const551
-2F72  @cinit
+2DA4  @PRINTF_X_535
+29E8  @const544
+2DEA  @PRINTF_LU_535
+29EE  @const548
+29FA  @const549
+2A06  @const550
+2A1C  @const551
+2F74  @cinit
 0136  StrtoulGO
 0136  StrtolGO
 14DA  exit
@@ -213,23 +213,23 @@ User Memory space:
 User Memory space: 
 
 Project Directory:
-    C:\Projects\MWT-3\TM3Firmware\
+    D:\Project\tm3firmware\
 
 Project Files:
     tm3.c
     tm3.h
-    ..\..\..\Program Files (x86)\PICC\devices\18F4520.h
-    ..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
-    ..\..\..\Program Files (x86)\PICC\drivers\stddef.h
-    ..\..\..\Program Files (x86)\PICC\drivers\string.h
-    ..\..\..\Program Files (x86)\PICC\drivers\ctype.h
+    C:\Program Files\PICC\devices\18F4520.h
+    C:\Program Files\PICC\drivers\stdlib.h
+    C:\Program Files\PICC\drivers\stddef.h
+    C:\Program Files\PICC\drivers\string.h
+    C:\Program Files\PICC\drivers\ctype.h
     ee_var.h
     font_6x8r.h
     graph_lcd.h
     modbus_isr.h
 
 Units:
-    C:\Projects\MWT-3\TM3Firmware\tm3 (main)
+    D:\Project\tm3firmware\tm3 (main)
 
 Compiler Settings:
     Processor:      PIC18F4520
